@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre Noi </title>
+
+    <link rel="icon" type="image/png" href="c:\Users\deniz\Pictures\Screenshots\Captură de ecran 2026-11-18 184500.png">
+    <!-- Fonturi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero-wrapper">
+        <!-- Bara de navigare -->
+        <header class="navbar">
+            <a href="index.html" class="logo">
+                <img src= "c:\Users\deniz\Pictures\Screenshots\Captură de ecran 2026-11-18 184500.png" alt="Logo" class="logo-img">
+            </a>
+
+            <!-- Buton meniu telefon (Hamburger) -->
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Deschide meniul">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Cuprinsul -->
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="active">Despre Noi</a>
+                <a href="echipa.html">Echipa</a>
+                <a href="programe.html">Programe și Servicii</a>
+                <a href="activitati.html">Activități și Evenimente</a>
+                <a href="proiecte.html">Proiecte</a>
+                <a href="contact.html" class="btn-nav-contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Secțiunea principală (Hero) -->
+        <main class="hero-content">
+            <h1 class="hero-title">
+                Competențe și <span class="underline-wave">Caracter<svg viewBox="0 0 220 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 8.5C22 2.5 42 14.5 62 8.5C82 2.5 102 14.5 122 8.5C142 2.5 162 14.5 182 8.5C198 3.5 210 10.5 218 8.5" stroke="#E09F3E" stroke-width="3.5" stroke-linecap="round"/></svg></span><br>
+                pentru Prezent și Viitor.
+            </h1>
+
+            <p class="hero-subtitle">
+                Bine ați venit într-un loc care se simte ca acasă. Îmbinăm joaca cu educația pentru a le oferi copiilor un start perfect într-un mediu sigur și plin de inspirație.
+            </p>
+
+            <!-- Butoanele de acțiune -->
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary">Programează o vizită</a>
+                <a href="programe.html" class="btn btn-outline">Explorează Programele</a>
+            </div>
+
+            <!-- poze si elemente grafice -->
+            <div class="hero-gallery">
+                <!-- Bucla decorativă din stânga -->
+                <svg class="doodle-loop" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 90C5 50 45 25 60 55C70 75 45 85 40 65C35 45 75 20 105 15M105 15L95 10M105 15L98 25" stroke="#E09F3E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                <!-- poza stânga -->
+                <div class="photo-card card-left">
+                    <img src="c:\Users\deniz\Downloads\668556291_1757405351907650_3909088477401216264_n.jpg">
+                </div>
+
+                <!-- poza central -->
+                <div class="photo-card card-center">
+                    <img src="c:\Users\deniz\Downloads\884830284_1956533628661487_4479269822709030294_n.jpeg">
+                </div>
+
+                <!-- poza dreapta -->
+                <div class="photo-card card-right">
+                    <img src="c:\Users\deniz\Downloads\593784611_1650620962586090_4563443217937980512_n.jpg">
+                </div>
+
+                <!-- linii dreapta -->
+                <svg class="doodle-rays" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 30L25 10M22 38L45 20M30 48L50 42" stroke="#E09F3E" stroke-width="3.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </main>
+
+        <!-- Norii  -->
+        <div class="cloud-divider">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,120 L0,70 C40,35 110,35 150,75 C190,30 280,30 320,75 C370,25 470,25 520,75 C570,35 650,35 700,75 C750,25 850,25 900,75 C950,30 1040,30 1090,75 C1140,25 1240,25 1290,75 C1330,40 1400,40 1440,70 L1440,120 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </div>
+
+    
+    <section class="about-section">
+        <div class="container">
+            <h2>De ce să ne alegi pe noi?</h2>
+            <p>Misiunea noastră - Asigurarea condițiilor necesare pentru
+                <strong>educarea preșcolarilor din mediul rural</strong>.</p>
+        </div>
+    </section>
+
+    <!-- meniul pentru telefon -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
